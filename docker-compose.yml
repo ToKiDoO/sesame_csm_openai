@@ -1,5 +1,6 @@
 services:
   csm-api:
+    restart: unless-stopped
     build:
       context: .
       dockerfile: Dockerfile
