@@ -1,6 +1,7 @@
 services:
   csm-api:
     restart: unless-stopped
+    container_name: sesame_csm
     build:
       context: .
       dockerfile: Dockerfile
